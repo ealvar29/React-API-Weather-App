@@ -3,6 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Search from "./components/search/search";
+import CurrentWeather from "./components/current-weather/current-weather";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -12,6 +14,7 @@ function App() {
   return (
     <div className="container">
       <Search onSearchChange={handleOnSearchChange} />
+      <CurrentWeather />
     </div>
   );
 }
